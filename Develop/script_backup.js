@@ -1,7 +1,6 @@
 // Assignment Code
-
 //function KEY() {
-
+function ALL() {
 //query password length
 function p_length() {
 var password_length = window.prompt("Enter password length:");
@@ -23,10 +22,11 @@ var lower_case = window.prompt("Include lowercase characters? (Y/N)");
 
 if ((lower_case != "y") && (lower_case !="Y") && (lower_case != "n") && (lower_case != "N")) {
     alert("Please enter y or n")
-    l_case()
-  } else if (lower_case  == "y" || lower_case == "Y"
-    
-}    
+    l_case()   
+  } else { 
+    l_case_value = "y";
+    }
+}
 
 //query uppercase
 function u_case() {
@@ -55,11 +55,11 @@ function s_case() {
   if ((spec_case != "y") && (spec_case !="Y") && (spec_case != "n") && (spec_case != "N")) {
       alert("Please enter y or n")
       s_case()
-    }
+    } 
 }
 
 
-  
+
   
 function querySelector() {
   p_length()
@@ -71,19 +71,62 @@ function querySelector() {
     alert("Please select at least one character type.")
     querySelector()
   }
-}
+} 
  
-  
 
 
 
 //SETS!
 
-var l_case_set = Math.floor((Math.random() * 25) + 97)
-var u_case_set = Math.floor((Math.random() * 25) + 65)
-var n_case_set = Math.floor((Math.random() * 10) + 48)
-var s_case_set = [Math.floor((Math.random() * 15) + 33), Math.floor((Math.random() * 7) + 58), 
-Math.floor((Math.random() * 6) + 91), Math.floor((Math.random() * 4) + 123)]
+
+function pass_gen() {
+
+
+  pass_len = 10;
+  blank_pass = "";
+  blank_array = [];
+
+  var l_case_set = Math.floor((Math.random() * 25) + 97)
+  var u_case_set = Math.floor((Math.random() * 25) + 65)
+  var n_case_set = Math.floor((Math.random() * 10) + 48)
+  var s_case_set = [Math.floor((Math.random() * 15) + 33), Math.floor((Math.random() * 7) + 58), Math.floor((Math.random() * 6) + 91), 
+    Math.floor((Math.random() * 4) + 123)]
+
+    if  (lower_case == "y") {
+    blank_array.push(l_case_set);
+    }
+  
+    if  (upper_case == "y") {
+      blank_array.push(u_case_set);
+    }
+  
+    if  (num_case == "y") {
+      blank_array.push(n_case_set);
+    }
+  
+    if  (spec_case == "y") {
+      blank_array.push(s_case_set);
+    }
+
+    for (i = 0; i < pass_len; i++) {
+    var pre_index = Math.floor((Math.random()*blank_array.length))
+    var index = blank_array[pre_index];
+    (blank_pass = blank_pass + (String.fromCharCode(index)))
+      }
+
+
+alert("im working")
+alert (blank_pass)
+}
+
+
+}
+
+ALL();
+
+
+
+
 
 
 //var generateBtn = document.querySelector("#generate");
@@ -170,3 +213,4 @@ blank_string = "";
 //append list of random charcodes to set length
 
 //alert(options[index]) //checker
+
