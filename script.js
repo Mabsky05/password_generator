@@ -111,6 +111,7 @@ function pass_gen() {
             }  
 
     alert(blank_string)
+    location.reload()
     return(blank_string)
 }
 
