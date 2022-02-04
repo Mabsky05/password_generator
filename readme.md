@@ -27,8 +27,8 @@ grimdango@gmail.com
 
 ## Log 
 
-### 27/02/21
-File restructuring
+### 04/02/21
+File restructuring.
 
 ### 27/02/21
 Major revisions, reload function.
