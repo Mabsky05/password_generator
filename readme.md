@@ -1,31 +1,42 @@
-# Profile Page
+# Password Generator
 
-![alt text](assets/sample.jpg)
-![alt text](assets/sample.gif)
+![alt text](Assets/sample.jpg)
+![alt text](Assets/sample.gif)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Summary
-Profile page showcasing Github projects and professional credentials 
+Page for generating passwords through a series of prompts
 
 ## Description / Instructions
-Upon loading: Site will show top navbar and center carousel. 
+Upon loading: Display of interface with "Generate Password" button.
 
-Navbar contents, left to right: Linked and Github links, About (click and display), Contact (click and reveal), drop for CV and folio.
+Clicking on the button will initiate a series of prompts to create a password.
 
-Carousel, each slide navigated by arrow: Github project (click on photo), repo link (click on link). 
+Parameters include: <br>
+Number of characters (8 < x < 128) <br>
+Lowercase characters <br>
+Uppercase characters <br>
+Numbers <br>
+Special characters <br>
+
+Confirming all prompts will display password in alert box. 
 
 ## Contact
 grimdango@gmail.com
 
 ## Log 
-### 04/02/22
-Major upload.
 
-### 31/01/22
-Core website elements laid out.  
+### 27/02/21
+File restructuring
 
-### 29/01/22
+### 27/02/21
+Major revisions, reload function.
+
+### 16/12/21
+Partial revisions.   
+
+### 14/12/21
 First commit. 
    
 
