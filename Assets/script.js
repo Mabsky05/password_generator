@@ -11,7 +11,7 @@ var blank_string = ""
 function p_length() {
   password_length = window.prompt("Enter password length:");
     if (isNaN(password_length)) {
-      alert("Please enter a number:")
+      confirm("Please enter a number:")
       p_length()
   } else if (password_length < 8 || password_length > 128) {
       var num_confirm = confirm("Password length needs to be between 8 and 128 characters.");
@@ -111,7 +111,9 @@ function pass_gen() {
             }  
 
     alert(blank_string)
+    location.reload()
     return(blank_string)
+
 }
 
  
